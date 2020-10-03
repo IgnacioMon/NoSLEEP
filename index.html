@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juega con NoSLEEP</title>
-
   <!-- Bootsrap CDN-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
   />
@@ -12,9 +11,8 @@
   <!-- Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/f8f3eb2046.js" crossorigin="anonymous"></script>
 
-  <!-- Owl Carousel CDN -->
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <!-- Custom Stylesheet-->
+  <link rel="stylesheet" href="./css/style.css" /> 
 
 </head>
 <body>
@@ -39,13 +37,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-12 text-center">
+        <div class="logo">
+          <img src="./assets/9f567564-2895-42b9-8c9a-d19c00379c49_200x200.png" width="80px" alt="Logo">
+        </div>
+        <div class="text-center">
           <h2 class="my-md-3 site-title">NoSLEEP</h2>
         </div>
         <div class="col-md-4 col-12 text-right">
           <p class="my-md-4 header-links">
-            <a href="#" class="px-2">Entrar</a>
-            <a href="#" class="px-1">Crear cuenta</a>
+            <a href="inicio.html" class="px-2">Entrar</a>
+            <a href="registro.html" class="px-1">Crear cuenta</a>
           </p>
         </div>
       </div>
@@ -81,36 +82,207 @@
 
 <!-- Main Section -->
   <main>
-    <!-- First Slider -->
-    <div class="container-fluid p-0">
-      <div class="site-slider">
-        <div id="slider-one">
-          <div class="item">
-            <img src="./assets/BANNER1.jpg.png" alt="Banner 1"/>
+    <div class="categories">
+      <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img src="./assets/consolas.jpg" alt="csles">
+        </div>
+        <div class="col-3">
+          <img src="./assets/controles.jpg" alt="ctrls">
+        </div>
+        <div class="col-3">
+          <img src="./assets/cajas.jpg" alt="cajas">
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- Productos -->
+    <div class="small-container">
+      <h2 class= "title">Productos Destacados</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./assets/ps4.jpg" alt="ps4">
+          <h4>PlayStation 4</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
           </div>
-          <div class="item">
-            <img src="./assets/BANNER2.jpg.png" alt="Banner 2"/>
+          <p>$250.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/Ryzen Notebook Gamer.jpg" alt="nbg">
+          <h4>Notebook Gamer Ryzen</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <div class="item">
-            <img src="./assets/BANNER3.jpg.png" alt="Banner 3"/>
+          <p>$550.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/switch.jpg" alt="ns">
+          <h4>Nintendo Switch</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$225.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/SF4 PS4.jpg" alt="sf5">
+          <h4>PS4: Street Figther 5</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>$35.00</p>
+        </div>
+      </div>
+
+      <h2 class= "title">Productos Recientes</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./assets/SSBU switch.png" alt="SSBU">
+          <h4>Switch: Super Smash Bros Ultimate</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/cOd XBOX1.jpg" alt="codx1">
+          <h4>Xbox 1: Call of Duty</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/doom ps4.jpg" alt="doom">
+          <h4>PS4: Doom</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>$35.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/ffx13.jpg" alt="ff12">
+          <h4>PS4: Final Fantasy 12</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$20.00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="./assets/Mgs_2_sons.jpg" alt="msgs">
+          <h4>PS4: Metal Gear Solid Survive</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$33.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/RE3_remake_PS4.jpg" alt="re3">
+          <h4>PS4: Resident Evil 3 Remake</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/gta.webp" alt="gtav">
+          <h4>PS4: GTA V</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>$41.00</p>
+        </div>
+        <div class="col-4">
+          <img src="./assets/Tony-Hawks-Pro-Skater-12-PS4-portada-falabella.jpg" alt="thps">
+          <h4>PS4: Tony Hawk Pro Skater 1+2 HD</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>$60.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seccion Ofertas -->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="Oferta">
+            <img src="./assets/switch.jpg" alt="SwichOferta">
+          </div>
+          <div class="col-2 md-12">
+            <p>Exclusivamente en NoSLEEP</p>
+            <h1>Consola Nintendo Switch - $225.00</h1>
+            <small>Ahora podras jugar con la nueva consola de Nintendo los 
+              mejores juegos de la Nintendo Wii y la Nintendo Switch, todo en solo una consola
+              con sus controles ajustables y pantalla integrada para jugar en todas partes!
+            </small>
           </div>
         </div>
       </div>
     </div>
-    <!-- /First Slider -->
   </main>
  
 <!-- /Main Section -->
  <footer></footer>
   
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-  </script>
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
